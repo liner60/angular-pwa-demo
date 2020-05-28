@@ -1,0 +1,9 @@
+<div class="movie-list-page">
+  <div class="movie-info-item" *ngFor="let item of movieList">
+    <img [src]="item.img" class="movie-image">
+    <div class="movie-content">
+      <h3 class="movie-title">{{item.title}}</h3>
+      <p class="movie-desc">{{item.desc?.length > 30 ? item.desc.slice(0, 30) + '......' : item.desc}}</p>
+    </div>
+  </div>
+</div>

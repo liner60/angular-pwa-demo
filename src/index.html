@@ -4,11 +4,27 @@
   <meta charset="utf-8">
   <title>PwaDemo</title>
   <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--控制状态栏、浏览器地址栏颜色-->
+  <meta name="theme-color" content="#11214f">
+  <!--兼容ios mainfest相关配置-->
+
+  <!--应用展示方式 display 通过设置yes进入standalone模式-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!--状态栏样式  default 白色 / black 黑色 / black-translucent 灰色半透明 颜色随body颜色改变-->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!--桌面应用名称 short_name-->
+  <!--<meta name="apple-mobile-web-app-title" content="星空影院">-->
+  <!--桌面图标 icons-->
+  <link rel="apple-touch-icon" href="assets/icons/icon-96x96.png">
+
+  <!--引入mainfest文件-->
+  <link rel="manifest" href="manifest.webmanifest">
+
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body>
+<body style="background: #11214f url('./assets/images/guidePage.jpg') no-repeat fixed top; background-size: cover; height: 100%;">
   <app-root></app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
 </body>
 </html>
